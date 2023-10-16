@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+  </head>
+  <body>
+   
+    <div class="box_container" id="div1">
+      <img src="/images/CHAT.jpg" style="position: fixed; width: 30rem;height: auto ;left: 90px;top:140px;border: 3px solid;" alt="CHAT">
+      <form action="/home1" method="POST">
+      <div class="login_form">
+        <img src="/images/Logo.jpg" style="position: fixed; width: 10rem;height: auto ;left: 808px;top:100px;border: 3px solid;" alt="LETS-CHAT">
+        <label class="logo_text">LETS-CHAT</label>
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <label class="Uname_font">Enter your Username</label><br>
+        <input type="text" id="uname" placeholder="Username" name="username"><br>
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <label class="Upass_font">Enter your password</label><br>
+        <input type="password" id="upass" placeholder="Password" name="psw"><br><br>
+        <!-- -------------------------------------------------------------------------------------------- -->
+        <button id="go_home">Login</button>
+        
+      </div>
+      </form>
+      <form action="/register" method="POST">
+        <button type="submit" id="go_register" >Signup</button>
+      </form>
+    </div>    
+  </body>
+</html>

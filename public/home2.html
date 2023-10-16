@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Messages</title>
+        <link rel="stylesheet" href="/stylesheets/home2.css">
+    </head>
+    <body>
+            <div class="navbar">
+                <a class="active" href="/Home1">Messages</a>
+                <a class="right">Home2</a>
+            </div>
+            <div class="screen">
+                <label id="name" style="left: 180px;">Name : </label><br>
+                <label id="msgRecieved" style="left: 180px;">Msg : </label>
+            </div>
+    </body>
+    <script>
+        var uname = localStorage.getItem('user-name');
+        var recmsg = localStorage.getItem('msgSent');
+
+        document.getElementById('name').textContent = uname;
+        document.getElementById('msgRecieved').textContent = recmsg;
+        
+    </script>
+</html>
